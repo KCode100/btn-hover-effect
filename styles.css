@@ -1,6 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext";
+:root {
+  --pink: #eb1777;
+  --white: #fff;
+}
 body {
-  background-color: #ebebeb;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAFfKj/FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF4OXp8PX50NXZBLxR6QAAAEhJREFUeNpiYGJgYGACCCAGMAAIIDiDCSCAGLAAgABCEcbBBAggGIORQhogwNCcwIjddKgQI6ojUbkgWSYMo+BCjKiOR9PLBAAchAAxHFDBbwAAAABJRU5ErkJggg==");
 }
 * {
   box-sizing: border-box;
@@ -10,7 +14,7 @@ h1 {
   font-family: comfortaa;
   font-weight: 900;
   font-size: 3em;
-  color: #fff;
+  color: var(--white);
   text-shadow: 0em 0.05em 0 rgba(0, 0, 0, 0.35);
 }
 button {
@@ -33,7 +37,7 @@ button:after {
   content: "";
   display: block;
   position: absolute;
-  border-color: #454545;
+  /* border-color: #454545; */
   box-sizing: border-box;
   border-style: solid;
   width: 1em;
@@ -55,12 +59,12 @@ button:hover:before,
 button:hover:after {
   width: calc(100% + 12px);
   height: calc(100% + 12px);
-  border-color: #fff;
+  border-color: var(--white);
 }
 button:hover {
   color: #353535;
-  background-color: #fff;
-  border-color: #fff;
+  background-color: var(--white);
+  border-color: var(--white);
   cursor: pointer;
 }
 .panel {
@@ -70,21 +74,21 @@ button:hover {
   margin: auto;
 }
 .pink button {
-  color: #eb1777;
-  border-color: #eb1777;
+  color: var(--pink);
+  border-color: var(--pink);
 }
 .pink button:before,
 .pink button:after {
-  border-color: #eb1777;
+  border-color: var(--pink);
 }
 .pink button:hover:before,
 .pink button:hover:after {
-  border-color: #eb1777;
+  border-color: var(--pink);
 }
 .pink button:hover {
-  color: #fff;
-  background-color: #eb1777;
-  border-color: #eb1777;
+  color: var(--white);
+  background-color: var(--pink);
+  border-color: var(--pink);
 }
 .pink .panel {
   max-width: 960px;
