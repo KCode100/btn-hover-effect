@@ -1,98 +1,98 @@
 @import "https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext";
 :root {
-  --pink: #eb1777;
-  --white: #fff;
+	--pink: #eb1777;
+	--white: #fff;
 }
 body {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAFfKj/FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF4OXp8PX50NXZBLxR6QAAAEhJREFUeNpiYGJgYGACCCAGMAAIIDiDCSCAGLAAgABCEcbBBAggGIORQhogwNCcwIjddKgQI6ojUbkgWSYMo+BCjKiOR9PLBAAchAAxHFDBbwAAAABJRU5ErkJggg==");
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAFfKj/FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF4OXp8PX50NXZBLxR6QAAAEhJREFUeNpiYGJgYGACCCAGMAAIIDiDCSCAGLAAgABCEcbBBAggGIORQhogwNCcwIjddKgQI6ojUbkgWSYMo+BCjKiOR9PLBAAchAAxHFDBbwAAAABJRU5ErkJggg==");
 }
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 h1 {
-  text-align: center;
-  font-family: comfortaa;
-  font-weight: 900;
-  font-size: 3em;
-  color: var(--white);
-  text-shadow: 0em 0.05em 0 rgba(0, 0, 0, 0.35);
+	text-align: center;
+	font-family: comfortaa;
+	font-weight: 900;
+	font-size: 3em;
+	color: var(--white);
+	text-shadow: 0em 0.05em 0 rgba(0, 0, 0, 0.35);
 }
 button {
-  color: #454545;
-  background: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #454545;
-  position: relative;
-  margin: 1em;
-  display: inline-block;
-  padding: 0.5em 1em;
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-  font-family: comfortaa;
-  font-weight: bold;
+	color: #454545;
+	background: transparent;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #454545;
+	position: relative;
+	margin: 1em;
+	display: inline-block;
+	padding: 0.5em 1em;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	font-family: comfortaa;
+	font-weight: bold;
 }
 button:before,
 button:after {
-  content: "";
-  display: block;
-  position: absolute;
-  /* border-color: #454545; */
-  box-sizing: border-box;
-  border-style: solid;
-  width: 1em;
-  height: 1em;
-  transition: all 0.3s ease-in-out;
+	content: "";
+	display: block;
+	position: absolute;
+	/* border-color: #454545; */
+	box-sizing: border-box;
+	border-style: solid;
+	width: 1em;
+	height: 1em;
+	transition: all 0.3s ease-in-out;
 }
 button:before {
-  top: -6px;
-  left: -6px;
-  border-width: 2px 0 0 2px;
-  z-index: 5;
+	top: -6px;
+	left: -6px;
+	border-width: 2px 0 0 2px;
+	z-index: 5;
 }
 button:after {
-  bottom: -6px;
-  right: -6px;
-  border-width: 0 2px 2px 0;
+	bottom: -6px;
+	right: -6px;
+	border-width: 0 2px 2px 0;
 }
 button:hover:before,
 button:hover:after {
-  width: calc(100% + 12px);
-  height: calc(100% + 12px);
-  border-color: var(--white);
+	width: calc(100% + 12px);
+	height: calc(100% + 12px);
+	border-color: var(--white);
 }
 button:hover {
-  color: #353535;
-  background-color: var(--white);
-  border-color: var(--white);
-  cursor: pointer;
+	color: #353535;
+	background-color: var(--white);
+	border-color: var(--white);
+	cursor: pointer;
 }
 .panel {
-  max-width: 960px;
-  text-align: center;
-  position: relative;
-  margin: auto;
+	max-width: 960px;
+	text-align: center;
+	position: relative;
+	margin: auto;
 }
 .pink button {
-  color: var(--pink);
-  border-color: var(--pink);
+	color: var(--pink);
+	border-color: var(--pink);
 }
 .pink button:before,
 .pink button:after {
-  border-color: var(--pink);
+	border-color: var(--pink);
 }
 .pink button:hover:before,
 .pink button:hover:after {
-  border-color: var(--pink);
+	border-color: var(--pink);
 }
 .pink button:hover {
-  color: var(--white);
-  background-color: var(--pink);
-  border-color: var(--pink);
+	color: var(--white);
+	background-color: var(--pink);
+	border-color: var(--pink);
 }
 .pink .panel {
-  max-width: 960px;
-  text-align: center;
-  position: relative;
-  margin: auto;
+	max-width: 960px;
+	text-align: center;
+	position: relative;
+	margin: auto;
 }
